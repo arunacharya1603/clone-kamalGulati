@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    @media (min-width:720px) {
+      .downstage {
+        width: 1180px;
+        height: 450px;
+        top: 180px;
+        left: 130px;
+        padding: 40px 0px 0px 0px;
+        gap: 0px;
+        opacity: 0px;
+        background: #0069B4CC;
+        position: relative;
+        top: -5rem;
+        left: 3rem;
+      }
+      .book-thumbs{
+        width: 50%;
+      }
+      .book-thumbs p{
+        width: 75%;
+      }
+      .thumb-right img{
+        width: 50%;
+      }
+    }
+
+    .upstage {
+      width: 1262px;
+      height: 200px;
+      padding: 80px 383px 197px 382px;
+      gap: 0px;
+      opacity: 0px;
+      background: #DBEAFF;
+    }
+
+    .book-thumbs {
+      margin-left: 4rem;
+      
+    }
+
+    .thumb-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media (max-width:719px) {
+      .upstage {
+        display: none;
+      }
+
+      .downstage {
+        padding: 40px 0px 0px 0px;
+        gap: 0px;
+        opacity: 0px;
+        background: #2383c7cc;
+        position: relative;
+        top: 0rem;
+        left: 0rem;
+      }
+
+      .thumb-right img {
+        width: 100%;
+      }
+
+      .book-thumbs h1 {
+        font-size: 1.75rem;
+      }
+      .thumb-right img{
+        width: 100%;
+        margin-left: 10rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+  <!-- Navbar -->
+  <div class="navbar-div">
+    <nav class="navbar navbar-expand-lg navbar-dark ml-4">
+      <div class="d-flex align-items-center ms-2">
+        <!-- Circle with Kamal -->
+        <a href="#" class="circle text-white text-decoration-none" style="font-size: 30px">Kamal</a>
+        <!-- Text Gulati outside the circle -->
+        <span class="ms-2 text-white fw-bold" style="font-size: 30px">Gulati</span>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-5 me-5">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Framework</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Book</a>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link w-100 rounded bg-white text-primary">
+              Schedule a call &rarr;
+            </button>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero d-flex flex-column flex-lg-row align-items-center justify-content-center text-center text-lg-start">
+    <div class="hero-content px-4">
+      <h1>
+        I Guarantee your business’s life blood - Its data stay secure and
+        recoverable
+      </h1>
+      <p>
+        Never Worry About Data Loss Again. Kamal identifies and mitigates
+        security risks, keeping your business protected 24/7.
+      </p>
+      <a href="#" class="btn bg-white text-primary btn-lg mt-4">Schedule a Call</a>
+    </div>
+    <div class="hero-image mt-4 mt-lg-0">
+      <img src="./assets/hero.png" alt="Hero Image" class="img-fluid" />
+    </div>
+  </div>
+
+  <!-- Features Section -->
+
+  <div class="main d-flex flex-row justify-content-evenly align-items-center">
+    <div>
+      <img src="./assets/mod.png" alt="Hero Image" />
+    </div>
+    <div>
+      <img src="./assets/usha.png" alt="Usha" />
+    </div>
+    <div>
+      <img src="./assets/bajaj.png" alt="Bajaj" />
+    </div>
+    <div>
+      <!-- <img src="./assets/csf.png" alt=""> -->
+    </div>
+    <div>
+      <img src="./assets/steller.png" alt="Steller" />
+    </div>
+    <div>
+      <img src="./assets/hcl.png" alt="Hcl" />
+    </div>
+    <div>
+      <img src="./assets/orient.png" alt="Orient" />
+    </div>
+    <div>
+      <img src="./assets/hal.png" alt="Hal" />
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body about">
+            <div class="text-start mb-3">
+              <img src="./assets/collon.png" alt="" />
+            </div>
+            <p>
+              Before working with Kamal, we were constantly worried about
+              potential data loss and the reliability of our backup systems.
+              We had tried various solutions in the past, but nothing gave us
+              the confidence.
+              <span class="font-weight-bold spanbold text-primary">Kamal's expertise in data resiliency changed
+                everything.</span>
+              Now, we have 24/7 data protection and peace of mind
+            </p>
+            <p class="text-start text-primary">
+              <span class="font-weight-bold">Jitin Sethi</span>
+            </p>
+            <p class="text-start">
+              - Panasonic Life Solutions India Pvt. Ltd
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="min-vh-100 gap-3 d-flex flex-column justify-content-evenly align-items-center mt-5 ">
+    <div class="text-center w-75 mt-4 ">
+      <h1>As Your Growth-Oriented Business Owner, What Do You Want?</h1>
+      <div class="d-flex flex-lg-row flex-column justify-content-center align-items-center mt-5">
+        <img src="./assets/test1.png" alt="" class="img-fluid" style="width: 300px;">
+        <img src="./assets/test2.png" alt="" class="img-fluid ms-lg-3" style="width: 300px;">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="d-flex justify-content-center gap-3 mb-3">
+        <div class="card w-75">
+          <div class="card-body">
+            <input type="checkbox"> To Uncover hidden threats lurking within your systems that can attacked by
+            attackers. </input>
+          </div>
+        </div>
+        <div class="card w-75">
+          <div class="card-body">
+            <input type="checkbox"> To Safeguard your brand's reputation by proactively addressing security
+            vulnerabilities.</input>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center gap-3 mb-3">
+        <div class="card w-75">
+          <div class="card-body">
+            <input type="checkbox"> To Ensure compliance with industry regulations and data protection laws. </input>
+          </div>
+        </div>
+        <div class="card w-75">
+          <div class="card-body">
+            <input type="checkbox"> To Allocate sufficient budget for thorough penetration testing. </input>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <p class="text-start w-75 mt-4">In an era where data breaches, ransomware attacks, and system failures are at an
+      all-time high, safeguarding your critical business information is no longer optional — it’s essential. As a
+      renowned expert in IT Backup and Data Resiliency, Kamal Gulati offers bulletproof solutions that not only protect
+      your data but ensure seamless recovery when disaster strikes. With over 30 years of industry leadership and a
+      reputation for excellence, Kamal guarantees that your business’s lifeblood — its data — is always secure and
+      recoverable, no matter the circumstances.</p>
+  </div>
+
+
+  <div class="bert">
+    <div class="container  framework-container">
+      <div class="framework-heading">iBART Framework</div>
+      <div class="framework-description">
+        Ensuring data resiliency through a structured approach. Our framework covers all critical aspects from
+        exploration to implementation. Each step is designed to enhance your data protection strategy and ensure
+        seamless recovery.
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="hexagon-container">
+              <div class="hexagon">
+                <div class="hex1">
+                  <img src="./assets/hexagon1.png" alt="Environment Exploration">
+                  <h4>01.<br />Environment Exploration</h4>
+                  <p class="text-monospace">Thorough assessment of your current data environment to identify
+                    vulnerabilities and areas for improvement.</p>
+                </div>
+              </div>
+
+              <div class="hexagon">
+                <div class="hex1">
+                  <img src="./assets/hexagon2.png" alt="Data Collection">
+                  <h4>02.<br />Data Collection</h4>
+                  <p>Comprehensive gathering of relevant data to understand your system’s behavior and backup needs.</p>
+                </div>
+              </div>
+
+              <div class="hexagon">
+                <div class="hex1">
+                  <img src="./assets/hexagon3.png" alt="Testing">
+                  <h4>03.<br />Testing</h4>
+                  <p>Rigorous testing protocols to ensure that all backup and recovery processes are effective and
+                    reliable.</p>
+                </div>
+              </div>
+
+              <div class="hexagon hex45">
+                <div class="hex1 ">
+                  <img src="./assets/hexagon4.png" alt="Recommendations">
+                  <h4>04.<br />Recommendations</h4>
+                  <p>Tailored advice and strategies to optimize your data resiliency based on the collected data and
+                    testing results.</p>
+                </div>
+              </div>
+
+              <div class="hexagon hex45">
+                <div class="hex1 ">
+                  <img src="./assets/hexagon5.png" alt="Implementation">
+                  <h4>05.<br />Implementation</h4>
+                  <p>Executing the recommended strategies with precision to strengthen your data backup and recovery
+                    systems.</p>
+                </div>
+              </div>
+              <div>
+                <img src="" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="min-vh-100 my-5 mx-5 py-4">
+    <div class="frame5">
+      <div class="row d-flex flex-column align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0 frame5-heading">
+          <h2>Meet Kamal Gulati</h2>
+          <p class="lead text-muted"><span class="text-primary font-weight-bolder">#1</span> Cybersecurity Consultant
+            Specializes in Data Security & Data Recovery</p>
+        </div>
+
+      </div>
+
+      <div class="d-flex flex-lg-row flex-column mt-5 kamal-frame ">
+        <div class="col-12 kamal-f1 d-flex gap-3 flex-column">
+          <h5 class="text-primary">Bringing Innovation to the Table</h5>
+          <p>In today's digital age, ensuring the safety and integrity of your data is paramount. Kamal Gulati, with
+            over 30 years of experience, specializes in IT Backup and Data Resiliency, providing comprehensive solutions
+            to protect your critical business information.</p>
+          <p>Data resiliency is not just about backup; it's about being prepared for the unexpected. Kamal's approach
+            involves a meticulous audit framework, 24x7 emergency support, and continuous innovation to meet your
+            evolving needs. Trust Kamal Gulati to safeguard your data and maintain your business continuity.</p>
+          <p>With a track record of excellence, Kamal ensures that your data remains secure and recoverable under all
+            circumstances. His expertise in creating IPs around IT Backup Audit integration layers sets him apart as a
+            leader in the field.</p>
+        </div>
+        <div class="col-md-6 text-center kamal-f2">
+          <img src="./assets/hero.png" alt="Kamal Gulati" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
+
+      <div class="mt-5 d-flex flex-lg-row flex-column justify-content-center gap-5">
+        <div class="carddown">
+          <div class="line"></div>
+          <div class="text-content">
+            <h3>30+</h3>
+            <p>Years of Experience</p>
+          </div>
+        </div>
+
+        <div class="carddown">
+          <div class="line"></div>
+          <div class="text-content">
+            <h3>500+</h3>
+            <p>Happy Clients</p>
+          </div>
+        </div>
+
+
+        <div class="carddown">
+          <div class="line"></div>
+          <div class="text-content">
+            <h3>3978+</h3>
+            <p>Project Completed</p>
+          </div>
+        </div>
+
+        <div class="carddown">
+          <div class="line"></div>
+          <div class="text-content">
+            <h3>9+</h3>
+            <p>Services Offered</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <div class="bert d-flex flex-lg-row flex-column  min-vh-100">
+    <div class="d-flex ps-5 flex-lg-row formleft justify-content-center">
+      <div>
+        <h1 class="text-white">Best-seller for Data Security</h1>
+        <p class="text-white">Mr. Backup 2.0" is your ultimate guide to ensuring data protection. Discover the essential
+          habits and strategies that keep your data safe and recoverable. This book is a must-have for any IT
+          professional committed to data resiliency.</p>
+        <ul class="checklist text-white">
+          <li>
+            <input type="checkbox" checked>
+            <label>Learn the 7 habits for backup ready reckoner.</label>
+          </li>
+          <li>
+            <input type="checkbox" checked>
+            <label>Understand the criticality of data backup through engaging stories.</label>
+          </li>
+          <li>
+            <input type="checkbox" checked>
+            <label>Equip your team with practical backup training.</label>
+          </li>
+        </ul>
+
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-12 text-start">
+              <hp class="text-white">Ensure your data's safety with proven strategies and insights.</hp>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-12">
+              <div class="d-flex flex-column align-items-start gap-2">
+                <div class="form-section d-flex flex-md-row flex-column align-items-center">
+                  <input type="text" class="form-control me-2 mb-2 mb-md-0" placeholder="Full Name*">
+                  <input type="email" class="form-control me-2 mb-2 mb-md-0" placeholder="Your Email Address*">
+                </div>
+                <button class="formsection-btn btn btn-danger">Download the Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="image-container">
+        <!-- First Image -->
+        <div class="img1">
+          <img src="./assets/book1.png" alt="Book" class="img-fluid">
+        </div>
+        <!-- Second Image -->
+        <div class="img2">
+          <img src="./assets/book2.png" alt="Book" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="comment d-flex flex-row justify-content-center align-content-center">
+    <div class="comment-part d-flex flex-column justify-content-center align-items-start m-5">
+      <h6><img src="./assets/collon.png" alt=""></h6>
+      <div class="">
+        <h6>Kamal Gulati and his team have been instrumental in ensuring our data security and resiliency. Their
+          proactive approach and <span class="text-primary">in-depth expertise</span> have made a significant impact on
+          our operations over the years</h6>
+        <p>Amandeep Bawa</p>
+        <p class="text-primary">-IT head, Panasonic India</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="bert min-vh-100 d-flex flex-column gap-4 justify-content-center align-items-center">
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <p class="text-white">Case Studies</p>
+      <h1 class="text-white">Client’s Success Stories</h1>
+    </div>
+    <div class="d-flex flex-row gap-4 cardbox-main w-75">
+      <div class="mt-4 cardbox mb-4">
+        <div class="cardbox-card">
+          <img src="./assets/qoutes.png" class="cardbox-img" alt="">
+          <h5>10 times more fast & secure web portals - totally a game-changer equation.</h5>
+          <p>Kamal Gulati has been the first ever to understand our unique challenges and could present viable &
+            practical solution quickly.</p>
+        </div>
+      </div>
+
+      <div class="mt-4 cardbox mb-4">
+        <div class="cardbox-card">
+          <img src="./assets/qoutes.png" class="cardbox-img" alt="">
+          <h5>Achieving ISO Certifications & maintenance since their on-boarding</h5>
+          <p>KAMAL Gulati is the one of the most promising & professional that helps in achieving and maintaining
+            safety.</p>
+        </div>
+      </div>
+
+      <div class="mt-4 cardbox mb-4">
+        <div class="cardbox-card">
+          <img src="./assets/qoutes.png" class="cardbox-img" alt="">
+          <h5>Help us achieve to maintain for the last 5 Years in a row.</h5>
+          <p>Appreciation for their professional approach, dedication & massive knowledge to deliver top-notch solutions
+            under one roof.</p>
+        </div>
+      </div>
+
+      <div class="mt-4 cardbox mb-4">
+        <div class="cardbox-card">
+          <img src="./assets/qoutes.png" class="cardbox-img" alt="">
+          <h5>10 times more fast & secure web portals - totally a game-changer equation.</h5>
+          <p>Kamal Gulati has been the first ever to understand our unique challenges and could present viable &
+            practical solution quickly.</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <button>previous</button>
+      <button>next</button>
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="min-vh-100">
+    <div class="upstage">
+      <div class="d-flex text-center">
+        <p>Book a Personalized One-on-One Call with Kamal Gulati for Expert Data Security and Resiliency Solutions</p>
+      </div>
+    </div>
+
+
+    <div class="downstage">
+      <div class="d-flex flex-lg-row flex-column justify-content-evenly">
+        <div class="book-thumbs ms-4 ps-4">
+          <h1 class="text-white">Book One-on-One Call</h1>
+          <p class="w-75 text-white">Schedule a personalized session with Kamal Gulati to discuss your specific data
+            security and
+            resiliency needs. Benefit from expert advice tailored to your organization's unique challenges and goals.
+          </p>
+
+          <ul class="checklist w-75 text-white">
+            <li>
+              <input type="checkbox" checked>
+              <label>Receive customized solutions for data protection.</label>
+            </li>
+            <li>
+              <input type="checkbox" checked>
+              <label>Gain insights into improving your backup strategies.</label>
+            </li>
+            <li>
+              <input type="checkbox" checked>
+              <label>Get answers to your pressing data security questions.</label>
+            </li>
+          </ul>
+
+          <p class="text-white">
+            Secure your spot for a one-on-one consultation with Kamal Gulati today.
+          </p>
+          <button class="bg-danger rounded btn pb-2">YES PLEASE BOOK MY SEAT FOR SURE !!</button>
+        </div>
+
+        <div class="w-50 thumb-right">
+          <img src="./assets/thumbsup.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Footer Section -->
+  <footer class="d-flex footer flex-lg-row pe-5 ps-5 flex-column justify-content-between align-items-center py-4">
+    <div class="footer-left d-flex flex-column gap-3">
+      <img src="./assets/logo.png" class="imag" alt="">
+      <p>Kamal Gulati is a leading expert in data security and resiliency with over 30 years of experience.</p>
+      <div class="d-flex flex-row">
+        <a href="#" class="text-decoration-none text-dark me-3"><img src="./assets/insta.png" alt=""></a>
+        <a href="#" class="text-decoration-none text-dark me-3"><img src="./assets/linkd.png" alt=""></a>
+        <a href="#" class="text-decoration-none text-dark me-3"><img src="./assets/facebook.png" alt=""></a>
+      </div>
+    </div>
+    <div class="footer-right">
+      <h4>Contact Us</h4>
+      <p>Corporate Office: Esteem Integrated Logistics (P) Ltd.
+        “Esteem House” 117/A/1,
+        Patravali Farms, Sattur, Dharwad - 580009</p>
+      <p>mobile: +91-9874589631</p>
+      <p>Email us: hello@bookmyseat.com</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
