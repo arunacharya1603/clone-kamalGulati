@@ -29,8 +29,8 @@
 
 @media (min-width: 992px) {
   .hero {
-    padding-top: 8rem;
-    height: 86vh;
+    padding-top: 12rem;
+    height: 100vh;
     /* Adjust height on smaller screens */
   }
 
@@ -93,12 +93,6 @@
 }
 
 @media (min-width: 768px) {
-  .hero {
-    padding-top: 10rem;
-    /* height: 86; */
-    /* Adjust height on smaller screens */
-  }
-
   .hero h1 {
     font-size: 3rem;
     /* Larger font size for bigger screens */
