@@ -740,6 +740,9 @@ img {
   gap: 2rem;
 }
 
+.cardd-body{
+  padding:24px;
+
 .cardbox-cardd {
   height: 26rem;
   width: 20rem;
